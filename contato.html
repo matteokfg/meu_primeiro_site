@@ -21,22 +21,28 @@
     <br />
     <form action="https://script.google.com/macros/s/AKfycbwhfC079nVEkh2Aq6SaxLkwMbNKAPsqvIg8VH8rLw/exec" method="post" class="gform" data-email="example@email.net">
       <p>Mas se você quiser me contratar para mecher no código do seu site preencha isto:</p>
-      <input type="text" name="nome" required>:Seu nome</input>
+      <label for="nome1">Seu nome:</label>
+      <input type="text" id="nome1" name="nome" required />
       <br />
-      <input type="text" name="email" required>:Seu e-mail</input>
+      <label for="email1">Seu e-mail:</label>
+      <input type="text" id="email1" name="email" required />
       <br />
-      <input type="text" name="telefone" required>:Seu telefone</input>
+      <label for="tel1">Seu telefone:</label>
+      <input type="text" id="tel1" name="telefone" required />
       <br />
-      <input type="text" name="mensagem" placeholder="Escreva aqui" required>:Me conte sobre você e site</input>
+      <label for="descrição1">Sua descrição:</label>
+      <textarea type="text" id="descrição1" name="mensagem" placeholder="Escreva aqui" rows="4" cols="50" required></textarea>
       <button type="submit">Enviar</button>
     </form>
-    <form action="">
+    <form action="https://script.google.com/macros/s/AKfycbweEbDGecMcY6EKWhCM2bWumrT-90VVP7yRFlZuaw/exec" method="post" class="gform" data-email="example@email.net">
       <p>Além disso sou professor particular.</p>
       <h3>Se quiser ter aulas comigo, preencha isto:</h3>
-      <input type="text" placeholder="Coloque aqui" required>Nome</input>
+      <label for="nome2">Nome:</label>
+      <input type="text" id="nome2"placeholder="Coloque aqui" name="nome" required />
       <br />
       <br />
-      <input type="text" required>:e-mail</input>
+      <label for="email2">Email:</label>
+      <input type="text" id="email2" name="email" required />
       <h3>Qual o seu ano?<h3>
       <label>
         <input name="ano" type="radio" value="fundamental I">E. Fundamental I
@@ -49,9 +55,11 @@
       </label>
       <br />
       <br />
-      <input type="text">Descreva voce</input>
+      <label for="descrição2">Descreva o que você quer aprender:</label>
+      <textarea type="text" id="descrição2" name="descrição" cols="50" rows="6"></textarea>
       <br />
-      <input type="text">:De onde você é?</input>
+      <label for="lugar">De onde você é:</label>
+      <input type="text" id="lugar" name="lugar" />
       <br />
       <button type="submit" style="color: #363636;">Enviar</button>
     </form>
