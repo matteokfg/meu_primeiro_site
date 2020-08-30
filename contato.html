@@ -19,8 +19,12 @@
     <h3>Número:(**) @@###&&&%%</h3>
     <hr>
     <br />
-    <form action="https://script.google.com/macros/s/AKfycbwhfC079nVEkh2Aq6SaxLkwMbNKAPsqvIg8VH8rLw/exec" method="post" class="gform" data-email="example@email.net">
+    <form action="https://script.google.com/macros/s/AKfycbwhfC079nVEkh2Aq6SaxLkwMbNKAPsqvIg8VH8rLw/exec" method="post" class="gform">
       <p>Mas se você quiser me contratar para mecher no código do seu site preencha isto:</p>
+      <div style="display:none" class="thankyou_message">
+        <!-- You can customize the thankyou message by editing the code below -->
+        <h2><em>Obrigado</em>, entrarei em contato em breve!</h2>
+      </div>
       <label for="nome1">Seu nome:</label>
       <input type="text" id="nome1" name="nome" required />
       <br />
@@ -34,9 +38,13 @@
       <textarea type="text" id="descrição1" name="mensagem" placeholder="Escreva aqui" rows="4" cols="50" required></textarea>
       <button type="submit">Enviar</button>
     </form>
-    <form action="https://script.google.com/macros/s/AKfycbweEbDGecMcY6EKWhCM2bWumrT-90VVP7yRFlZuaw/exec" method="post" class="gform" data-email="example@email.net">
+    <form action="https://script.google.com/macros/s/AKfycbweEbDGecMcY6EKWhCM2bWumrT-90VVP7yRFlZuaw/exec" method="post" class="gform">
       <p>Além disso sou professor particular.</p>
       <h3>Se quiser ter aulas comigo, preencha isto:</h3>
+      <div style="display:none" class="thankyou_message">
+        <!-- You can customize the thankyou message by editing the code below -->
+        <h2><em>Obrigado</em>, entrarei em contato em breve!</h2>
+      </div>
       <label for="nome2">Nome:</label>
       <input type="text" id="nome2"placeholder="Coloque aqui" name="nome" required />
       <br />
@@ -65,5 +73,6 @@
     </form>
     <h2 style="color: red;">Os formulários ainda não estão funcionando!</h2>
     <a href="index.html">Voltar para a página principal</a>
+    <script data-cfasync="false" type="text/javascript" src="javascriptform.js"></script>
   </body>
 </html>
